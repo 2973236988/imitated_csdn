@@ -1,0 +1,36 @@
+<!-- 头部 start -->
+
+<script src="js/getParameter.js"></script>
+<script>
+    $(function () {
+        //查询用户信息
+        $.get("user/findOne",{},function (data) {
+           //{uid:1,name:'李四'}
+           var msg = "欢迎回来，"+data.name;
+           $("#span_username").html(msg);
+
+       });
+    });
+
+</script>
+
+<header id="header">
+
+        <div class="shortcut">
+            <!-- 未登录状态  -->
+            <div class="login_out">
+                <a href="login.html">登录</a>
+                <a href="register.html">注册</a>
+            </div>
+            <!-- 登录状态  -->
+            <div class="login">
+            	
+                <span id="span_username"></span>
+
+                <a href="javascript:location.href='user/exit';">退出</a>
+            </div>
+        </div>
+
+</header>
+
+    
