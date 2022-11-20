@@ -27,21 +27,7 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-tx</artifactId>
-      <version>5.0.2.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-jdbc</artifactId>
-      <version>5.0.2.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>com.alibaba</groupId>
-      <artifactId>druid</artifactId>
-      <version>1.0.9</version>
-    </dependency>
+
 
     <!--javaMail-->
     <dependency>
@@ -58,17 +44,9 @@
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-databind</artifactId>
           <version>2.11.1</version>
+          <scope>provided</scope>
       </dependency>
-    <dependency>
-      <groupId>commons-beanutils</groupId>
-      <artifactId>commons-beanutils</artifactId>
-      <version>1.9.2</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>4.0.1</version>
-    </dependency>
+
 
     <!--jedis-->
     <dependency>
@@ -80,7 +58,7 @@
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
+      <version>4.0.1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -98,19 +76,19 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
-      <version>4.1.2.RELEASE</version>
+      <version>5.0.2.RELEASE</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
-      <version>4.1.2.RELEASE</version>
+      <version>5.0.2.RELEASE</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-tx</artifactId>
-      <version>4.1.2.RELEASE</version>
+      <version>5.0.2.RELEASE</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -133,11 +111,7 @@
       <scope>compile</scope>
     </dependency>
     <!--jackson-->
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>2.3.3</version>
-    </dependency>
+
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
@@ -159,6 +133,13 @@
       <artifactId>slf4j-simple</artifactId>
       <version>1.7.25</version>
       <scope>compile</scope>
+    </dependency>
+
+    <!-- JSTL 标签库 -->
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
     </dependency>
 
 
@@ -211,7 +192,7 @@
             <version>2.1</version>
             <configuration>
               <!-- 通过maven tomcat7:run运行项目时，访问项目的端口号 -->
-              <port>80</port>
+              <port>9090</port>
               <!-- 项目访问路径  本例：localhost:9090,  如果配置的aa， 则访问路径为localhost:9090/aa-->
               <path>/csdn</path>
             </configuration>
@@ -223,6 +204,19 @@
 
       </plugins>
     </pluginManagement>
+
+
+
+
+
   </build>
+
+
+
+
+
+
+
+
 
 </project>

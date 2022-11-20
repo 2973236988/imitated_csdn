@@ -30,7 +30,7 @@ public class BaseServlet extends HttpServlet {
             Method method = this.getClass().getMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
             //4.执行方法
             //暴力反射
-//            method.setAccessible(true);
+            method.setAccessible(true);
             method.invoke(this,req,resp);
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
